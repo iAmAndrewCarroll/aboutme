@@ -1,0 +1,118 @@
+body {
+    background-color:#e3dace;
+    color:#3e3e3b;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+h1 {
+    font-size: 4rem;
+    color:#62Abbd;
+    text-align:center;
+    padding-bottom:.25rem;
+    padding-top:.75rem;
+}
+
+ul {
+    text-align:center;
+    list-style:none;
+    margin:1rem;
+}
+li {
+    align:center;
+    margin:1rem;
+}
+
+p {
+    text-align:justify;
+    text-justify:inter-word;
+    margin-left:auto;
+    margin-right:auto;
+    width:80%;
+    padding-bottom:1rem;
+}
+
+.pics {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:50%;
+  }
+
+table, th, td {
+    border: 1px solid;
+}
+
+.grid {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+table {
+    width: 80%;
+    margin-bottom: 1rem;    
+}
+
+th {
+    height: 3rem;
+    padding: 5px;
+    font-weight:bolder;
+    font-size:x-large;
+}
+
+td {
+    height: 2rem;
+    vertical-align: middle;
+    padding-left:.5rem;
+}
+
+tr:hover {
+    background-color:#62abbd;
+}
+
+/* retrieved from https://stackoverflow.com/questions/54876969/how-to-accessibly-hide-table-caption-element */
+caption {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.rs {
+    text-align:center;
+}
+
+footer {
+    padding-top: 8rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+/* Three image containers (use 25% for four, and 50% for two, etc)
+Retrieved from https://www.w3schools.com/howto/howto_css_images_side_by_side.asp */
+.column {
+    float: left;
+    width: 50%;
+    padding: 0px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .img1 {
+    margin-left: auto;
+    margin-right: auto;
+    float: right;
+    border: 1px;    
+  }
+
+  video {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
