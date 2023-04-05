@@ -34,7 +34,7 @@
 /* this is the easy way to eliminate the upper/lowercase issues in inputs */
 let userName = prompt("Welcome! iAmAndrewCarroll's About Me Page.  What is your name, fellow Human?");
 // console.log('I am so happy you are here, ' + userName + '!!!')
-if (userName == 'Christine' || userName || 'christine' || 'Bright One' || 'bright one'){
+if (userName == 'Christine' || 'christine' || 'Bright One' || 'bright one'){
     alert(userName + ', Andrew really, really digs your vibe, girl!');
 } else {
     alert('I am so happy you are here, ' + userName + '!!!')
