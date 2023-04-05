@@ -1,3 +1,8 @@
+* {
+    /* calculate the border and the padding as part of the width of all elements */
+    box-sizing: border-box;
+}
+
 body {
     background-color:#e3dace;
     color:#3e3e3b;

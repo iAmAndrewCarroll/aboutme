@@ -34,7 +34,7 @@
 /* this is the easy way to eliminate the upper/lowercase issues in inputs */
 let userName = prompt("Welcome! iAmAndrewCarroll's About Me Page.  What is your name, fellow Human?");
 // console.log('I am so happy you are here, ' + userName + '!!!')
-if (userName == 'Christine' || 'christine' || 'Bright One' || 'bright one'){
+if (userName == 'Christine' || 'christine' || 'Bright One' || 'bright one') {
     alert(userName + ', Andrew really, really digs your vibe, girl!');
 } else {
     alert('I am so happy you are here, ' + userName + '!!!')
@@ -44,7 +44,7 @@ let sciFi = prompt('Does Andrew like SciFi? Yes or No?').toLowerCase();
 if (sciFi === 'yes' || sciFi === 'y') {
     // console.log('Of course Andrew likes SciFi!!!!!!!');
     alert('Of course he likes SciFi!!!!');
-} else if(sciFi === 'no' || sciFi === 'n') {
+} else if (sciFi === 'no' || sciFi === 'n') {
     // console.log('FOOL!  Of course Andrew likes SciFi!!!!! MUAHAHAHAHAHAHA!!');
     alert('FOOL!  Of course he likes SciFi!!!!! MUAHAHAHAHAHAHA!!');
 } else {
@@ -53,10 +53,10 @@ if (sciFi === 'yes' || sciFi === 'y') {
 }
 
 let meds = prompt('Does Andrew have experience with plant medicine? Yes or No').toLowerCase();
-if (meds === 'yes' || meds === 'y'){
+if (meds === 'yes' || meds === 'y') {
     // console.log('Of course he has experience with plant medicine!!');
     alert('Of course he has experience with plant medicine!!');
-} else if(meds === 'no' || meds === 'n') {
+} else if (meds === 'no' || meds === 'n') {
     // console.log('Silly Goose!  You know Andrew hunts Shadows!!')
     alert('Silly Goose!  You know Andrew hunts Shadows!!');
 } else {
@@ -65,10 +65,10 @@ if (meds === 'yes' || meds === 'y'){
 }
 
 let fire = prompt('Does Andrew have experience in firecraft? Yes or No').toLowerCase();
-if (fire === 'yes' || fire === 'y'){
+if (fire === 'yes' || fire === 'y') {
     // console.log('Of course he has experience in firecraft!!');
     alert('Of course he has experience in firecraft!!');
-} else if(fire === 'no' || fire === 'n') {
+} else if (fire === 'no' || fire === 'n') {
     // console.log('Bruh!  You know Andrew loves the dirt between his toes!!Try again...')
     alert('Bruh!  You know Andrew loves the dirt between his toes!! Try again...');
 } else {
@@ -77,10 +77,10 @@ if (fire === 'yes' || fire === 'y'){
 }
 
 let edu = prompt("Does Andrew have a Master's degree? Yes or No").toLowerCase();
-if (edu === 'yes' || edu === 'y'){
+if (edu === 'yes' || edu === 'y') {
     // console.log('Of course he does! Even though he strongly dislikes traditional education...');
     alert('Of course he does! Even though he strongly dislikes traditional education...');
-} else if(edu === 'no' || edu === 'n') {
+} else if (edu === 'no' || edu === 'n') {
     // console.log('Give a guy a little credit, yeah?')
     alert('Give a guy a little credit, yeah?');
 } else {
@@ -89,13 +89,57 @@ if (edu === 'yes' || edu === 'y'){
 }
 
 let entre = prompt("Is Andrew currently laying the foundation for an industry disrupting Software Development firm? Yes or No").toLowerCase();
-if (entre === 'yes' || entre === 'y'){
+if (entre === 'yes' || entre === 'y') {
     // console.log('Of course he is!  Andrew believes the traditional work environment is the equivalent to modern slavery and his new model for doing business and developing team members who are well cared for will cause a huge disruption in the industry!');
-    alert('Of course he is, '+ userName + '!  Andrew believes the traditional work environment is the equivalent to modern slavery and his new model for doing business and developing team members who are well cared for will cause a huge disruption in the industry!');
-} else if(entre === 'no' || entre === 'n') {
+    alert('Of course he is, ' + userName + '!  Andrew believes the traditional work environment is the equivalent to modern slavery and his new model for doing business and developing team members who are well cared for will cause a huge disruption in the industry!');
+} else if (entre === 'no' || entre === 'n') {
     // console.log('Oh come on now...with everything you've already learned you think he would be happy sitting back and getting along just to get along?')
     alert("Oh come on now, " + userName + "...with everything you've already learned you think he would be happy sitting back and getting along just to get along?");
 } else {
     // console.log('You must answer \'yes\' or \'no\'')
     alert('You must answer \'yes\' or \'no\'')
 }
+
+// let arr = [];
+//                      0         1     2       3       4       5
+// let parksNRec = [`Leslie`, `April`, `Ron`, `Andy`, `Ann`, `Tom`];
+// console.log(parksNRec); this will log the entire array
+// console.log(parksNRec[2]); states log parksNRec AT 2 (Ron)
+// let waffles = [`JJ\'s', true, [228, 343], 'bacon'];
+// console.log(parksNRec.length);
+
+// ARRAY METHODS
+// add a value to an array: parksNRec[6] = `Donna`;
+// console.log(parksNRec);  - this will show us that Donna has been added to the array
+// if this number is not an additional space it will overwrite whatever is currently in that space
+// parksNRec.push(`Tammy`) will add Tammy to the end of the Array; Can add multiple values at the same time
+// parksNRec.push(`Chris`, `Jerry`)
+
+// for loops are good for doing something a number of times
+// 1. Instanciate the variable
+// let i = 0
+// 
+// 2. Evaluate the variable
+// is i < parksNRec.length
+//
+// 3. Increment the variable
+// i++
+// shorthand for: i = i + 1
+//
+// for (let i=0; i < parksNRec.length; i++) {        KNOW THIS CODE KNOW THIS LOOP KNOW THIS FOR LOOP!!!!!!
+    // code that will run if the condition is true:
+    // console.log(parksNRec[i]);
+    // i does not increase in value until code in this code block has run
+    // each time the loop runs i increases as we specify
+// }
+
+// for (let i=0; i < parksNRec.length; i++) {
+    // code that will run if the condition is true:
+    // console.log(`parksNRec`[` + i + `]: ` + parksNRec[i]);
+    // template literal (or string literal)
+    // console.log(`parksNRec[${i}]: $parksNRec[i]}`);
+    // console.log(`Hi ${parksNRec[i]}, I hope you are having a nice day');
+    // i does not increase in value until code in this code block has run
+    // each time the loop runs i increases as we specify
+// }
+
