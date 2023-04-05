@@ -51,6 +51,7 @@ if (sciFi === 'yes' || sciFi === 'y') {
     // console.log('You must answer \'yes\' or \'no\'');
     alert('You must answer \'yes\' or \'no\'')
 }
+
 let meds = prompt('Does Andrew have experience with plant medicine? Yes or No').toLowerCase();
 if (meds === 'yes' || meds === 'y'){
     // console.log('Of course he has experience with plant medicine!!');
@@ -62,6 +63,7 @@ if (meds === 'yes' || meds === 'y'){
     // console.log('You must answer \'yes\' or \'no\'')
     alert('You must answer \'yes\' or \'no\'')
 }
+
 let fire = prompt('Does Andrew have experience in firecraft? Yes or No').toLowerCase();
 if (fire === 'yes' || fire === 'y'){
     // console.log('Of course he has experience in firecraft!!');
@@ -73,6 +75,7 @@ if (fire === 'yes' || fire === 'y'){
     // console.log('You must answer \'yes\' or \'no\'')
     alert('You must answer \'yes\' or \'no\'')
 }
+
 let edu = prompt("Does Andrew have a Master's degree? Yes or No").toLowerCase();
 if (edu === 'yes' || edu === 'y'){
     // console.log('Of course he does! Even though he strongly dislikes traditional education...');
@@ -84,6 +87,7 @@ if (edu === 'yes' || edu === 'y'){
     // console.log('You must answer \'yes\' or \'no\'')
     alert('You must answer \'yes\' or \'no\'')
 }
+
 let entre = prompt("Is Andrew currently laying the foundation for an industry disrupting Software Development firm? Yes or No").toLowerCase();
 if (entre === 'yes' || entre === 'y'){
     // console.log('Of course he is!  Andrew believes the traditional work environment is the equivalent to modern slavery and that his new model for doing business and developing team members who are well cared for will cause a huge disruption in the industry!');
