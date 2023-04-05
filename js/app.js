@@ -90,8 +90,8 @@ if (edu === 'yes' || edu === 'y'){
 
 let entre = prompt("Is Andrew currently laying the foundation for an industry disrupting Software Development firm? Yes or No").toLowerCase();
 if (entre === 'yes' || entre === 'y'){
-    // console.log('Of course he is!  Andrew believes the traditional work environment is the equivalent to modern slavery and that his new model for doing business and developing team members who are well cared for will cause a huge disruption in the industry!');
-    alert('Of course he is, '+ userName + '!  Andrew believes the traditional work environment is the equivalent to modern slavery and that his new model for doing business and developing team members who are well cared for will cause a huge disruption in the industry!');
+    // console.log('Of course he is!  Andrew believes the traditional work environment is the equivalent to modern slavery and his new model for doing business and developing team members who are well cared for will cause a huge disruption in the industry!');
+    alert('Of course he is, '+ userName + '!  Andrew believes the traditional work environment is the equivalent to modern slavery and his new model for doing business and developing team members who are well cared for will cause a huge disruption in the industry!');
 } else if(entre === 'no' || entre === 'n') {
     // console.log('Oh come on now...with everything you've already learned you think he would be happy sitting back and getting along just to get along?')
     alert("Oh come on now, " + userName + "...with everything you've already learned you think he would be happy sitting back and getting along just to get along?");
