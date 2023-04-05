@@ -100,46 +100,54 @@ if (entre === 'yes' || entre === 'y') {
     alert('You must answer \'yes\' or \'no\'')
 }
 
-// let arr = [];
-//                      0         1     2       3       4       5
-// let parksNRec = [`Leslie`, `April`, `Ron`, `Andy`, `Ann`, `Tom`];
-// console.log(parksNRec); this will log the entire array
-// console.log(parksNRec[2]); states log parksNRec AT 2 (Ron)
-// let waffles = [`JJ\'s', true, [228, 343], 'bacon'];
-// console.log(parksNRec.length);
 
-// ARRAY METHODS
-// add a value to an array: parksNRec[6] = `Donna`;
-// console.log(parksNRec);  - this will show us that Donna has been added to the array
-// if this number is not an additional space it will overwrite whatever is currently in that space
-// parksNRec.push(`Tammy`) will add Tammy to the end of the Array; Can add multiple values at the same time
-// parksNRec.push(`Chris`, `Jerry`)
 
-// for loops are good for doing something a number of times
-// 1. Instanciate the variable
-// let i = 0
-// 
-// 2. Evaluate the variable
-// is i < parksNRec.length
-//
-// 3. Increment the variable
-// i++
-// shorthand for: i = i + 1
-//
-// for (let i=0; i < parksNRec.length; i++) {        KNOW THIS CODE KNOW THIS LOOP KNOW THIS FOR LOOP!!!!!!
-    // code that will run if the condition is true:
-    // console.log(parksNRec[i]);
-    // i does not increase in value until code in this code block has run
-    // each time the loop runs i increases as we specify
-// }
+// add 'let score = 0' to the top before the questions; add a `score++` to each of the questions
+// requires a loop with possibilities for 'to high' 'to low' 'got it!' and has only four chances
+let guess = prompt('Guess how many joints Andrew used to smoke per day circa 2011...');
 
-// for (let i=0; i < parksNRec.length; i++) {
-    // code that will run if the condition is true:
-    // console.log(`parksNRec`[` + i + `]: ` + parksNRec[i]);
-    // template literal (or string literal)
-    // console.log(`parksNRec[${i}]: $parksNRec[i]}`);
-    // console.log(`Hi ${parksNRec[i]}, I hope you are having a nice day');
-    // i does not increase in value until code in this code block has run
-    // each time the loop runs i increases as we specify
-// }
+let lives = 4;
 
+while (lives) {
+    lives--;
+    console.log(`I am in the while loop. You have ${lives} lives left...`);
+}
+
+// FOR LOOP
+let lives1 = 7;
+
+for (let i = 0; i < lives1; i++) {
+    console.log(`I am in the for loop.  You have ${lives1 - i - 1} lives left...`);
+} // note that it is "you have ${lives1 - i - 1}" because the first attempt fails and leaves 6 lives left
+
+// DO WHILE; it will do the thing at least once, and then evaluate if it should do it again.
+
+
+
+
+// requires multiple possible correct answers and you need to be able to tell the user if they have guess one of them correctly, for example, what is one of my top five books?  This will end when a user guesses a correct answer OR runs out of attempts.  It will then display all possible correct answers to the user when complete (either correct or out of attempts)
+let books = [`The Body Keeps the Score`, `Eastern Body, Western Mind`, `Sometimes a Great Notion`, `The Surrender Experiment`, `Hebrews to Negroes`];
+
+let guess1 = prompt('Guess one of my top 5 favorite books...');
+
+let lives1 = 7;
+
+while (lives1) {
+    lives1--;
+    console.log(`I am in the while loop. You have ${lives1} lives left...`);
+    for (let i = 0; i < books.length; i++) {
+        // console.log(guess1, books[i]);
+        if (guess1 === books[i]) {
+            console.log(`Your correct`);
+        }
+    }
+}
+
+// Question 7 - Guess a Number
+// Response if
+// - guess is too high
+// - guess is too low
+// - guess is correct
+// - how many attempts they have left
+// - if there are no attempts left
+// - if there are not attempts left give them the answer
