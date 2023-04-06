@@ -17,6 +17,14 @@ h1 {
     padding-top:.75rem;
 }
 
+h2 {
+    font-size: 3.5rem;
+    color:#62Abbd;
+    text-align:center;
+    padding-bottom:.25rem;
+    padding-top:.75rem;
+}
+
 ul {
     text-align:center;
     list-style:none;
@@ -108,6 +116,7 @@ Retrieved from https://www.w3schools.com/howto/howto_css_images_side_by_side.asp
     content: "";
     clear: both;
     display: table;
+    width: 80%;
   }
   .img1 {
     margin-left: auto;
@@ -117,7 +126,33 @@ Retrieved from https://www.w3schools.com/howto/howto_css_images_side_by_side.asp
   }
 
   video {
+    padding-top: 2rem;
     margin-left: auto;
     margin-right: auto;
     display: block;
+  }
+
+  .fig1 {
+    display: table;
+    float: right;
+    padding-right: 70px;
+    margin-top: 5px;
+    color: #4c586F;
+    font-weight: bold;
+  }
+
+  .fig2 {
+    display: table;
+    float: left;
+    padding-left: 170px;
+    margin-top: 5px;
+    color: #4c586F;
+    font-weight: bold;
+  }
+
+  figure {
+    text-align: center;
+    margin-top: 5px;
+    color: #4c586F;
+    font-weight: bold;
   }
