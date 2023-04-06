@@ -32,7 +32,7 @@
 // console.log(sciFi2lower);
 
 let score = 0
-
+function userName(){
 /* this is the easy way to eliminate the upper/lowercase issues in inputs */
 let userName = prompt("Welcome! iAmAndrewCarroll's About Me Page.  What is your name, fellow Human?").toLowerCase();
 let gf = ['christine', 'bright one']
@@ -42,6 +42,8 @@ if (gf.includes(userName)) {
     } else {
         alert('I am so happy you are here, ' + userName + '!!!')
     }
+}
+userName ()
 
 let sciFi = prompt('Does Andrew like SciFi? Yes or No?').toLowerCase();
 if (sciFi === 'yes' || sciFi === 'y') {
