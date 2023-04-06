@@ -200,11 +200,13 @@ while (guessCorrect != true) {
     }
     if (lives1 === 0) {
         // console.log(`You've died of dysentery...`);
-        alert(`You've died of dysentery...Here is my top 5 list ${books}`)
+        alert(`You've died of dysentery...Here is my top 6 list ${books}`)
         break;
     }
 }
 alert(`You're final score was ${score}`)
+
+
 // Question 7 
 // - guess is correct
 // - how many attempts they have left
@@ -218,4 +220,4 @@ alert(`You're final score was ${score}`)
 // - guess is correct
 // - how many attempts they have left
 // - if there are no attempts left
-// - if there are not attempts left give them the answer
+// - if there are no attempts left give them the answer
