@@ -117,7 +117,7 @@ if (entre === 'yes' || entre === 'y') {
 let lives = 4;
 
 let joints = Math.floor(Math.random()*6)
-
+// + before prompt indicates the user input value is a number.  you can also parseInt or guess = parseInt(guess);
 while (lives) {
     let guess = +prompt('Guess how many joints Andrew used to smoke per day circa 2011...');
     if (guess === joints){
