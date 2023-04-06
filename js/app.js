@@ -45,6 +45,7 @@ if (gf.includes(userName)) {
 }
 userName ()
 
+function sciFi(){
 let sciFi = prompt('Does Andrew like SciFi? Yes or No?').toLowerCase();
 if (sciFi === 'yes' || sciFi === 'y') {
     // console.log('Of course Andrew likes SciFi!!!!!!!');
@@ -57,7 +58,10 @@ if (sciFi === 'yes' || sciFi === 'y') {
     // console.log('You must answer \'yes\' or \'no\'');
     alert('You must answer \'yes\' or \'no\'')
 }
+}
+sciFi ()
 
+function meds(){
 let meds = prompt('Does Andrew have experience with plant medicine? Yes or No').toLowerCase();
 if (meds === 'yes' || meds === 'y') {
     // console.log('Of course he has experience with plant medicine!!');
@@ -70,7 +74,10 @@ if (meds === 'yes' || meds === 'y') {
     // console.log('You must answer \'yes\' or \'no\'')
     alert('You must answer \'yes\' or \'no\'')
 }
+}
+meds()
 
+function fire(){
 let fire = prompt('Does Andrew have experience in firecraft? Yes or No').toLowerCase();
 if (fire === 'yes' || fire === 'y') {
     // console.log('Of course he has experience in firecraft!!');
@@ -83,7 +90,10 @@ if (fire === 'yes' || fire === 'y') {
     // console.log('You must answer \'yes\' or \'no\'')
     alert('You must answer \'yes\' or \'no\'')
 }
+}
+fire()
 
+function edu(){
 let edu = prompt("Does Andrew have a Master's degree? Yes or No").toLowerCase();
 if (edu === 'yes' || edu === 'y') {
     // console.log('Of course he does! Even though he strongly dislikes traditional education...');
@@ -96,7 +106,10 @@ if (edu === 'yes' || edu === 'y') {
     // console.log('You must answer \'yes\' or \'no\'')
     alert('You must answer \'yes\' or \'no\'')
 }
+}
+edu()
 
+function entre(){
 let entre = prompt("Is Andrew currently laying the foundation for an industry disrupting Software Development firm? Yes or No").toLowerCase();
 if (entre === 'yes' || entre === 'y') {
     // console.log('Of course he is!  Andrew believes the traditional work environment is the equivalent to modern slavery and his new model for doing business and developing team members who are well cared for will cause a huge disruption in the industry!');
@@ -109,8 +122,8 @@ if (entre === 'yes' || entre === 'y') {
     // console.log('You must answer \'yes\' or \'no\'')
     alert('You must answer \'yes\' or \'no\'')
 }
-
-
+}
+entre()
 
 // add 'let score = 0' to the top before the questions; add a `score++` to each of the questions
 // requires a loop with possibilities for 'to high' 'to low' 'got it!' and has only four chances
