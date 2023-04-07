@@ -194,7 +194,7 @@ while (guessCorrect != true) {
     for (let i = 0; i < books.length; i++) {
         if (guess1 === books[i].toLowerCase()) {
             console.log(guess1, books[i]);
-            alert(`You are correct!  Here is my top 5 list ${books}`);
+            alert(`You are correct!  Here is my top 6 list ${books}`);
             guessCorrect = true;
             break;
         } 
