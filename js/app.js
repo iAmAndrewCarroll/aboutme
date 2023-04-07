@@ -31,89 +31,115 @@
 // let sciFi2lower = sciFi2.toLowerCase();
 // console.log(sciFi2lower);
 
+// Stretch Goals for Arrays
+let userName = prompt("Welcome! iAmAndrewCarroll's About Me Page.  What is your name, fellow Human?").toLowerCase();
+let gf = ['christine', 'bright one']
+
+let joints = Math.floor(Math.random() * 6)
+
+let books = ['The Body Keeps the Score', 'Eastern Body, Western Mind', 'Sometimes a Great Notion', 'The Surrender Experiment', 'Hebrews to Negroes', 'The Untethered Soul'];
+
+let questions = ["Welcome! iAmAndrewCarroll's About Me Page.  What is your name, fellow Human?", "Does Andrew like SciFi? Yes or No?", "Does Andrew have experience with plant medicine? Yes or No", "Does Andrew have experience in firecraft? Yes or No", "Does Andrew have a Master's degree? Yes or No", "Is Andrew currently laying the foundation for an industry disrupting Software Development firm? Yes or No", "Guess how many joints Andrew used to smoke per day circa 2011...", "Guess one of my top 6 favorite books..."]
+
+let answers = [gf, ['yes', 'y'], ['yes', 'y'], ['yes', 'y'], ['yes', 'y'], ['yes', 'y'], joints, books]
 
 let score = 0
 // Question 1
 /* this is the easy way to eliminate the upper/lowercase issues in inputs */
-let userName = prompt("Welcome! iAmAndrewCarroll's About Me Page.  What is your name, fellow Human?").toLowerCase();
-let gf = ['christine', 'bright one']
+
 if (gf.includes(userName)) {
     // if (userName === ('christine' || 'bright one')) { ask why this isn't working!!!!!!
     alert(userName + ', Andrew really, really digs your vibe, girl!');
+} else {
+    alert('I am so happy you are here, ' + userName + '!!!')
+    gf.push(userName)
+}
+
+// if array two returns true the referrence redAlert = [0]??
+
+let redAlert = [`That is absolutely right, ${userName}`, `I know you did your best but you gotta have faith in the follow through...try again, ${userName}`]
+
+for (i = 1; i < 6; i++) {
+    console.log('array loop')
+    let quest = prompt(questions[i]).toLowerCase()
+    if (answers[i].includes(quest)) {
+        alert(redAlert[0])
+        score++
     } else {
-        alert('I am so happy you are here, ' + userName + '!!!')
-        gf.push(userName)
+        alert(redAlert[1])
     }
-
-// Question 2
-let sciFi = prompt('Does Andrew like SciFi? Yes or No?').toLowerCase();
-if (sciFi === 'yes' || sciFi === 'y') {
-    // console.log('Of course Andrew likes SciFi!!!!!!!');
-    alert('Of course he likes SciFi!!!!');
-    score++;
-} else if (sciFi === 'no' || sciFi === 'n') {
-    // console.log('FOOL!  Of course Andrew likes SciFi!!!!! MUAHAHAHAHAHAHA!!');
-    alert('FOOL!  Of course he likes SciFi!!!!! MUAHAHAHAHAHAHA!!');
-} else {
-    // console.log('You must answer \'yes\' or \'no\'');
-    alert('You must answer \'yes\' or \'no\'')
 }
 
-// Question 3
-let meds = prompt('Does Andrew have experience with plant medicine? Yes or No').toLowerCase();
-if (meds === 'yes' || meds === 'y') {
-    // console.log('Of course he has experience with plant medicine!!');
-    alert('Of course he has experience with plant medicine!!');
-    score++;
-} else if (meds === 'no' || meds === 'n') {
-    // console.log('Silly Goose!  You know Andrew hunts Shadows!!')
-    alert('Silly Goose!  You know Andrew hunts Shadows!!');
-} else {
-    // console.log('You must answer \'yes\' or \'no\'')
-    alert('You must answer \'yes\' or \'no\'')
-}
 
-// Question 4
-let fire = prompt('Does Andrew have experience in firecraft? Yes or No').toLowerCase();
-if (fire === 'yes' || fire === 'y') {
-    // console.log('Of course he has experience in firecraft!!');
-    alert('Of course he has experience in firecraft!!');
-    score++
-} else if (fire === 'no' || fire === 'n') {
-    // console.log('Bruh!  You know Andrew loves the dirt between his toes!!Try again...')
-    alert('Bruh!  You know Andrew loves the dirt between his toes!! Try again...');
-} else {
-    // console.log('You must answer \'yes\' or \'no\'')
-    alert('You must answer \'yes\' or \'no\'')
-}
+// // Question 2
+// let sciFi = prompt('Does Andrew like SciFi? Yes or No?').toLowerCase();
+// if (sciFi === 'yes' || sciFi === 'y') {
+//     // console.log('Of course Andrew likes SciFi!!!!!!!');
+//     alert('Of course he likes SciFi!!!!');
+//     score++;
+// } else if (sciFi === 'no' || sciFi === 'n') {
+//     // console.log('FOOL!  Of course Andrew likes SciFi!!!!! MUAHAHAHAHAHAHA!!');
+//     alert('FOOL!  Of course he likes SciFi!!!!! MUAHAHAHAHAHAHA!!');
+// } else {
+//     // console.log('You must answer \'yes\' or \'no\'');
+//     alert('You must answer \'yes\' or \'no\'')
+// }
 
-// Question 5
-let edu = prompt("Does Andrew have a Master's degree? Yes or No").toLowerCase();
-if (edu === 'yes' || edu === 'y') {
-    // console.log('Of course he does! Even though he strongly dislikes traditional education...');
-    alert('Of course he does! Even though he strongly dislikes traditional education...');
-    score++
-} else if (edu === 'no' || edu === 'n') {
-    // console.log('Give a guy a little credit, yeah?')
-    alert('Give a guy a little credit, yeah?');
-} else {
-    // console.log('You must answer \'yes\' or \'no\'')
-    alert('You must answer \'yes\' or \'no\'')
-}
+// // Question 3
+// let meds = prompt('Does Andrew have experience with plant medicine? Yes or No').toLowerCase();
+// if (meds === 'yes' || meds === 'y') {
+//     // console.log('Of course he has experience with plant medicine!!');
+//     alert('Of course he has experience with plant medicine!!');
+//     score++;
+// } else if (meds === 'no' || meds === 'n') {
+//     // console.log('Silly Goose!  You know Andrew hunts Shadows!!')
+//     alert('Silly Goose!  You know Andrew hunts Shadows!!');
+// } else {
+//     // console.log('You must answer \'yes\' or \'no\'')
+//     alert('You must answer \'yes\' or \'no\'')
+// }
 
-// Question 6
-let entre = prompt("Is Andrew currently laying the foundation for an industry disrupting Software Development firm? Yes or No").toLowerCase();
-if (entre === 'yes' || entre === 'y') {
-    // console.log('Of course he is!  Andrew believes the traditional work environment is the equivalent to modern slavery and his new model for doing business and developing team members who are well cared for will cause a huge disruption in the industry!');
-    alert('Of course he is, ' + userName + '!  Andrew believes the traditional work environment is the equivalent to modern slavery and his new model for doing business and developing team members who are well cared for will cause a huge disruption in the industry!');
-    score++;
-} else if (entre === 'no' || entre === 'n') {
-    // console.log('Oh come on now...with everything you've already learned you think he would be happy sitting back and getting along just to get along?')
-    alert("Oh come on now, " + userName + "...with everything you've already learned you think he would be happy sitting back and getting along just to get along?");
-} else {
-    // console.log('You must answer \'yes\' or \'no\'')
-    alert('You must answer \'yes\' or \'no\'')
-}
+// // Question 4
+// let fire = prompt('Does Andrew have experience in firecraft? Yes or No').toLowerCase();
+// if (fire === 'yes' || fire === 'y') {
+//     // console.log('Of course he has experience in firecraft!!');
+//     alert('Of course he has experience in firecraft!!');
+//     score++
+// } else if (fire === 'no' || fire === 'n') {
+//     // console.log('Bruh!  You know Andrew loves the dirt between his toes!!Try again...')
+//     alert('Bruh!  You know Andrew loves the dirt between his toes!! Try again...');
+// } else {
+//     // console.log('You must answer \'yes\' or \'no\'')
+//     alert('You must answer \'yes\' or \'no\'')
+// }
+
+// // Question 5
+// let edu = prompt("Does Andrew have a Master's degree? Yes or No").toLowerCase();
+// if (edu === 'yes' || edu === 'y') {
+//     // console.log('Of course he does! Even though he strongly dislikes traditional education...');
+//     alert('Of course he does! Even though he strongly dislikes traditional education...');
+//     score++
+// } else if (edu === 'no' || edu === 'n') {
+//     // console.log('Give a guy a little credit, yeah?')
+//     alert('Give a guy a little credit, yeah?');
+// } else {
+//     // console.log('You must answer \'yes\' or \'no\'')
+//     alert('You must answer \'yes\' or \'no\'')
+// }
+
+// // Question 6
+// let entre = prompt("Is Andrew currently laying the foundation for an industry disrupting Software Development firm? Yes or No").toLowerCase();
+// if (entre === 'yes' || entre === 'y') {
+//     // console.log('Of course he is!  Andrew believes the traditional work environment is the equivalent to modern slavery and his new model for doing business and developing team members who are well cared for will cause a huge disruption in the industry!');
+//     alert('Of course he is, ' + userName + '!  Andrew believes the traditional work environment is the equivalent to modern slavery and his new model for doing business and developing team members who are well cared for will cause a huge disruption in the industry!');
+//     score++;
+// } else if (entre === 'no' || entre === 'n') {
+//     // console.log('Oh come on now...with everything you've already learned you think he would be happy sitting back and getting along just to get along?')
+//     alert("Oh come on now, " + userName + "...with everything you've already learned you think he would be happy sitting back and getting along just to get along?");
+// } else {
+//     // console.log('You must answer \'yes\' or \'no\'')
+//     alert('You must answer \'yes\' or \'no\'')
+// }
 
 
 
@@ -124,11 +150,11 @@ if (entre === 'yes' || entre === 'y') {
 // Question 7
 let lives = 4;
 
-let joints = Math.floor(Math.random()*6)
+
 // + before prompt indicates the user input value is a number.  you can also parseInt or guess = parseInt(guess);
 while (lives) {
     let guess = +prompt('Guess how many joints Andrew used to smoke per day circa 2011...');
-    if (guess === joints){
+    if (guess === joints) {
         alert(`good job`);
         score++;
         break;
@@ -138,7 +164,7 @@ while (lives) {
     } else if (guess < joints) {
         lives--;
         alert(`To low...you have ${lives} left...`);
-    } 
+    }
     if (lives === 0) {
         alert(`You really killed the vibe...the correct answer is ${joints}`);
     }
@@ -181,7 +207,7 @@ while (lives) {
 // }
 
 // Question 8
-let books = ['The Body Keeps the Score', 'Eastern Body, Western Mind', 'Sometimes a Great Notion', 'The Surrender Experiment', 'Hebrews to Negroes', 'The Untethered Soul'];
+
 
 let guess1 = prompt(`Guess one of my top 6 favorite books...`).toLowerCase();
 
@@ -197,7 +223,7 @@ while (guessCorrect != true) {
             alert(`You are correct!  Here is my top 6 list ${books}`);
             guessCorrect = true;
             break;
-        } 
+        }
     };
     if (guessCorrect === true) {
         score++;
@@ -232,21 +258,6 @@ alert(`You're final score was ${score}`)
 // - if there are no attempts left give them the answer
 
 
-// Stretch Goals for Arrays
-// let questions = ["Welcome! iAmAndrewCarroll's About Me Page.  What is your name, fellow Human?", "Does Andrew like SciFi? Yes or No?", "Does Andrew have experience with plant medicine? Yes or No", "Does Andrew have experience in firecraft? Yes or No", "Does Andrew have a Master's degree? Yes or No", "Is Andrew currently laying the foundation for an industry disrupting Software Development firm? Yes or No", "Guess how many joints Andrew used to smoke per day circa 2011...", "Guess one of my top 6 favorite books..."]
-
-// let answers = [gf, ['yes'], ['yes'], ['yes'], ['yes'], ['yes'], joints, books]
-
-// let redAlert = [`That is absolutely right, ${userName}`, `I know you did your best but you gotta have faith in the follow through...try again, ${userName}` ]
-
-// for (i = 1; i < 6; i++) {
-// let quest = prompt(questions[i]).toLowerCase()
-// if (answer[i].includes(quest)) {
-//     alert(redAlert[0])
-// }  else {
-//     alert(redAlert[1])
-// }
-// }
 
 // Work from collections of like data: Create 3 arrays, one for each of: your questions, the correct answers, and the two possible responses. (The same applies if you’ve added in any other pieces to the questions besides the most basic structure.) Replace that content in the functions by accessing the arrays.
 
