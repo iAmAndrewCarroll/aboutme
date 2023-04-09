@@ -1,177 +1,220 @@
 * {
-    /* calculate the border and the padding as part of the width of all elements */
-    box-sizing: border-box;
+  /* calculate the border and the padding as part of the width of all elements */
+  box-sizing: border-box;
 }
 
 body {
-    background-color:#e3dace;
-    color:#3e3e3b;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  background-color: #e3dace;
+  color: #3e3e3b;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 h1 {
-    font-size: 4rem;
-    color:#62Abbd;
-    text-align:center;
-    padding-bottom:.25rem;
-    padding-top:.75rem;
+  font-size: 4rem;
+  color: #62Abbd;
+  text-align: center;
+  text-decoration: underline;
+  padding-bottom: .5rem;
+  padding-top: 1.25rem;
 }
 
 h2 {
-    font-size: 3.5rem;
-    color:#62Abbd;
-    text-align:center;
-    padding-bottom:.25rem;
-    padding-top:.75rem;
+  font-size: 2.5rem;
+  color: #62Abbd;
+  text-align: center;
+  padding-bottom: .5rem;
+  padding-top: .75rem;
+  text-decoration: underline;
 }
 
-ul {
-    text-align:center;
-    list-style:none;
-    margin:1rem;
+.linklist {
+  margin-top: 5rem;
+  text-align: center;
+  list-style: none;
+  margin: auto;
+  columns: 2;
+  width: 50%;
 }
+
+.linklist > li {
+  -webkit-column-break-inside: avoid;
+  margin: auto;
+  padding: 10px;
+  font-size: larger;
+}
+
 li {
-    align:center;
-    margin:1rem;
+  align: center;
+  margin: 1rem;
 }
 
 p {
-    text-align:justify;
-    text-justify:inter-word;
-    margin-left:auto;
-    margin-right:auto;
-    width:80%;
-    padding-bottom:1rem;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding-bottom: 1rem;
 }
 
 .pics {
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
-    width:50%;
-  }
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
-table, th, td {
-    border: 1px solid;
+table,
+th,
+td {
+  border: 1px solid;
 }
 
 .grid {
-    margin-left:auto;
-    margin-right:auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tableHead {
+  text-align: center;
 }
 
 table {
-    width: 80%;
-    margin-bottom: 1rem;    
+  width: 80%;
+  margin-bottom: 1rem;
 }
 
 th {
-    height: 3rem;
-    padding: 5px;
-    font-weight:bolder;
-    font-size:x-large;
+  height: 3rem;
+  padding: 5px;
+  font-weight: bolder;
+  font-size: x-large;
 }
 
 td {
-    height: 2rem;
-    vertical-align: middle;
-    padding-left:.5rem;
+  height: 2rem;
+  vertical-align: middle;
+  padding-left: .5rem;
 }
 
 tr:hover {
-    background-color:#62abbd;
+  background-color: #62abbd;
 }
 
 /* retrieved from https://stackoverflow.com/questions/54876969/how-to-accessibly-hide-table-caption-element */
 caption {
-    border: 0;
-    clip: rect(0, 0, 0, 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
 .rs {
-    text-align:center;
+  text-align: center;
 }
 
 footer {
-    padding-top: 8rem;
-    padding-bottom: 3rem;
-    text-align: center;
+  padding-top: 8rem;
+  padding-bottom: 3rem;
+  text-align: center;
 }
+
 /* Three image containers (use 25% for four, and 50% for two, etc)
 Retrieved from https://www.w3schools.com/howto/howto_css_images_side_by_side.asp */
 .column {
-    float: left;
-    width: 50%;
-    padding: 0px;
-  }
+  float: left;
+  width: 50%;
+  padding: 0px;
+}
 
 .column1 {
-    float: left;
-    width: 50%;
-    padding: 0px;
+  float: left;
+  width: 50%;
+  padding: 0px;
 }
 
 .row1::after {
-    content: "";
-    clear: both;
-    display: table;
-    width: 80%;
+  content: "";
+  clear: both;
+  display: table;
+  width: 80%;
 }
-  
-  /* Clear floats after image containers */
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-    width: 80%;
-  }
-  .img1 {
-    margin-left: auto;
-    margin-right: auto;
-    float: right;
-    border: 1px;    
-  }
 
-  video {
-    padding-top: 2rem;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  width: 80%;
+}
 
-  .fig1 {
-    display: table;
-    color: #4c586F;
-    font-weight: bold;
-    margin: auto;
-    font-size: 1vw;
-    float: left;
-    padding-inline-start: 35%;
-  }
+.img1 {
+  margin-left: auto;
+  margin-right: auto;
+  float: right;
+  border: 1px;
+}
 
-  .fig2 {
-    display: table;
-    color: #4c586F;
-    font-weight: bold;
-    margin: auto;
-    font-size: 1vw;
-  }
+video {
+  padding-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
 
-  figure {
-    display: block;
-    text-align: center;
-    color: #4c586F;
-    font-weight: bold;
-    margin: auto;
-    font-size: 2vw;
-  }
+.fig1 {
+  display: table;
+  color: #4c586F;
+  font-weight: bold;
+  margin: auto;
+  font-size: 1vw;
+  float: left;
+  padding-inline-start: 35%;
+}
 
-  .sell {
-    text-align: center;
-  }
+.fig2 {
+  display: table;
+  color: #4c586F;
+  font-weight: bold;
+  margin: auto;
+  font-size: 1vw;
+}
+
+figure {
+  display: block;
+  text-align: center;
+  color: #4c586F;
+  font-weight: bold;
+  margin: auto;
+  font-size: 2vw;
+}
+
+.sell {
+  text-align: center;
+}
+
+a:link {
+  color: #142632;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #4c586F;
+}
+
+a:visited, a:active {
+  color: #A2AAB0;
+}
+
+.sig1 {
+  padding-right:
+}
+
+.sig2 {
+  padding-left:
+}
