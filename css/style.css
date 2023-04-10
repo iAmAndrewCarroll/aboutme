@@ -53,7 +53,7 @@ section {
 }
 
 h1 {
-  font-size: 5vw;
+  font-size: 10vw;
   color: #62Abbd;
   text-align: center;
   text-decoration: underline;
@@ -63,13 +63,12 @@ h1 {
 }
 
 .divSec1 {
-  
   width: 80%;
   display: block;
 }
 
 h2 {
-  font-size: 2.75vw;
+  font-size: 8vw;
   color: #62Abbd;
   text-align: center;
   padding-bottom: .5rem;
