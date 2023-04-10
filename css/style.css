@@ -12,6 +12,32 @@ body {
 section {
   display: flex;
   justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+.row8 {
+  margin: auto;
+}
+
+.row8 img {
+  width: auto;
+  height: 60px;
+}
+
+.sec1 {
+  margin: auto;
+  font-family: cursive;
+
+}
+
+.row9 {
+  margin: auto;
+}
+
+.row9 img {
+  width: auto;
+  height: 60px;
 }
 
 h1 {
@@ -37,6 +63,7 @@ h2 {
   padding-bottom: .5rem;
   padding-top: .75rem;
   text-decoration: underline;
+  font-family: cursive;
 }
 
 .linklist {
