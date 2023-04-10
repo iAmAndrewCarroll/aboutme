@@ -18,11 +18,17 @@ section {
 
 .row8 {
   margin: auto;
+  width: 8vw;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .row8 img {
-  width: auto;
-  height: 60px;
+  max-width: 100%;
+  max-height: 8vh;
+  display: block;
 }
 
 .sec1 {
@@ -33,15 +39,21 @@ section {
 
 .row9 {
   margin: auto;
+  width: 8vw;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .row9 img {
-  width: auto;
-  height: 60px;
+  max-width: 100%;
+  max-height: 8vh;
+  display: block;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 5vw;
   color: #62Abbd;
   text-align: center;
   text-decoration: underline;
@@ -57,7 +69,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2.75vw;
   color: #62Abbd;
   text-align: center;
   padding-bottom: .5rem;
